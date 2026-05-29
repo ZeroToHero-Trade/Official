@@ -310,7 +310,7 @@ body{
 
 <!-- CTA -->
 <div class="cta">
-  <button onclick="joinNow()">🚀 JOIN CHANNEL — IT'S FREE</button>
+  <button onclick="customEvent()">🚀 Join Free Telegram</button>
 </div>
 
 <!-- TRUST -->
@@ -364,12 +364,12 @@ function showPopup(){
 }
 setInterval(showPopup,7000);
 
-function joinNow(){
-  window.location.href="https://www.t.me/+92SiZ2-3EmdlNTY1";
-}
-
 </script>
 
-
+     <script>
+        function customEvent() {
+            fbq('track', 'Subscribe');
+        }
+    </script>
 
 </body></html>

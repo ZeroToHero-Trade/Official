@@ -262,7 +262,7 @@ body{
 
 <!-- PROFILE -->
 <div class="profile">
-  <img id="logo-image" src="logo.jpg" alt="Educational Channel Logo" loading="lazy">
+  <img src="images/logo.jpg">
 
   <svg class="verified" viewBox="0 0 24 24">
     <defs>
@@ -278,7 +278,7 @@ body{
 </div>
 
 <!-- TITLE -->
-<div class="title"><span id="page-name"></span> </div>
+<div class="title">ZERO TO HERO (TRADING)™</div>
 <div class="sub">OFFICIAL TRADING CHANNEL</div>
 
 <!-- STATS -->
@@ -310,7 +310,7 @@ body{
 
 <!-- CTA -->
 <div class="cta">
-  <button id="telegram-link" onclick="customEvent()" href="#">🚀 Join Free Telegram</button>
+  <button onclick="joinNow()">🚀 JOIN CHANNEL — IT'S FREE</button>
 </div>
 
 <!-- TRUST -->
@@ -329,18 +329,6 @@ Disclaimer: This channel is for educational and informational purposes only.
 </div>
 
 </div>
-    <script>
-        const config = {
-            pageName: "ZERO TO HERO (TRADING)™",
-            telegramLink: "https://t.me/+jd_gAxsyDoViYjA9",
-            imageSrc: "images/logo.jpg"
-        };
-        document.addEventListener('DOMContentLoaded', function() {
-            document.getElementById('page-name').textContent = config.pageName;
-            document.getElementById('logo-image').src = config.imageSrc;
-            document.getElementById('telegram-link').href = config.telegramLink;
-        });
-    </script>
 
 <script>
 
@@ -376,12 +364,12 @@ function showPopup(){
 }
 setInterval(showPopup,7000);
 
+function joinNow(){
+  window.location.href="https://www.t.me/+92SiZ2-3EmdlNTY1";
+}
+
 </script>
 
-     <script>
-        function customEvent() {
-            fbq('track', 'Subscribe');
-        }
-    </script>
+
 
 </body></html>

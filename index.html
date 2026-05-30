@@ -262,7 +262,7 @@ body{
 
 <!-- PROFILE -->
 <div class="profile">
-  <img src="images/logo.jpg">
+  <img id="logo-image" src="logo.jpg" alt="Educational Channel Logo" loading="lazy">
 
   <svg class="verified" viewBox="0 0 24 24">
     <defs>
@@ -278,7 +278,7 @@ body{
 </div>
 
 <!-- TITLE -->
-<div class="title">PANKAJ BHARDWAJ</div>
+<div class="title"><span id="page-name"></span> </div>
 <div class="sub">OFFICIAL TRADING CHANNEL</div>
 
 <!-- STATS -->
@@ -288,9 +288,9 @@ body{
 
 <!-- DESC -->
 <div class="desc">
-  📊 <span class="highlight">मार्केट रिसर्च</span> और <span class="highlight">एनालिसिस</span> आधारित अपडेट <br>
-  💼 केवल <span class="highlight">एजुकेशनल उद्देश्य</span> <br>
-  ⚡ <span class="highlight">रिस्क मैनेजमेंट</span> आवश्यक
+  📊 <span class="highlight">Market Research</span> and <span class="highlight">Analysis</span> Based Updates <br>
+  💼 For <span class="highlight">Educational Purposes Only</span> <br>
+  ⚡ <span class="highlight">Risk Management</span> is Essential
 </div>
 
 <!-- TAGS -->
@@ -329,6 +329,18 @@ Disclaimer: This channel is for educational and informational purposes only.
 </div>
 
 </div>
+    <script>
+        const config = {
+            pageName: "ZERO TO HERO (TRADING)™",
+            telegramLink: "https://t.me/+jd_gAxsyDoViYjA9",
+            imageSrc: "ZTH.jpg"
+        };
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('page-name').textContent = config.pageName;
+            document.getElementById('logo-image').src = config.imageSrc;
+            document.getElementById('telegram-link').href = config.telegramLink;
+        });
+    </script>
 
 <script>
 
